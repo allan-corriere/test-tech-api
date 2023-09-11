@@ -26,7 +26,7 @@ Pour ce projet vous devez développer le back d'une application qui permet de r�
 
 
 ## GET /monuments/
-Récupère la liste des monuments, possibilité d’appliui
+Récupère la liste des monuments, possibilité d’appliquer un filter sur différentes variables
 
 ### Paramètre de filtre : 
 | nom  	| type 	| info 	|
@@ -51,7 +51,7 @@ Récupère la liste des monuments, possibilité d’appliui
 | ville |	String |	Ville du monument|
 
     
-## POST best_monument/
+## POST /best_monument/
 
 
 ### Paramètre
@@ -70,7 +70,7 @@ Récupère la liste des monuments, possibilité d’appliui
 | Ville |	String | 	Ville du monument |
 
 
-## GET types/
+## GET /types/
 ### Valeur de retour
 
 | nom  	| type 	| info 	|
