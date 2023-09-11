@@ -20,13 +20,13 @@ Pour ce projet vous devez développer le back d'une application qui permet de r�
     - Ville
     - Type
     - Id
-    - Favoris
+    - meilleur
 - L’utilisateur doit pouvoir récupérer la liste des types de monument
 - L’utilisateur doit pourvoir ajouter des monuments en tant que favori.
 
 
 ## GET /monuments/
-Récupère la liste des monuments, possibilité d’appliquer un filter sur différentes variables
+Récupère la liste des monuments, possibilité d’appliquer un filtre sur différentes variables
 
 ### Paramètre de filtre : 
 | nom  	| type 	| info 	|
@@ -62,12 +62,12 @@ Récupère la liste des monuments, possibilité d’appliquer un filter sur diff
 ### Valeur de retour 
 | nom  	| type 	| info 	|
 |------	|------	|------	|
-| Id |	String | 	Identifiant unique du monument |
-| Lat |	Number | 	Latitude du monument |
-| Long |	Number | 	Longitude du monument |
-| Type |	String | 	Type du monument |
-| Date |	Number | 	Date de construction |
-| Ville |	String | 	Ville du monument |
+| id |	String | 	Identifiant unique du monument |
+| lat |	Number | 	Latitude du monument |
+| long |	Number | 	Longitude du monument |
+| type |	String | 	Type du monument |
+| date |	Number | 	Date de construction |
+| ville |	String | 	Ville du monument |
 
 
 ## GET /types/
@@ -75,5 +75,5 @@ Récupère la liste des monuments, possibilité d’appliquer un filter sur diff
 
 | nom  	| type 	| info 	|
 |------	|------	|------	|
-|Id | 	String |	Identifiant du type |
-|Type | 	String |	Type de monument |
+|id | 	String |	Identifiant du type |
+|type | 	String |	Type de monument |
