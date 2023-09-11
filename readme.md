@@ -70,7 +70,7 @@ Récupère la liste des monuments, possibilité d’appliui
 | Ville |	String | 	Ville du monument |
 
 
-GET types/
+## GET types/
 ### Valeur de retour
 
 | nom  	| type 	| info 	|
