@@ -5,6 +5,13 @@ Ce projet un test technique pour évaluer les compétences pour le développemen
 
 Pour ce projet vous devez développer le back d'une application qui permet de référencer les monuments historiques de la métropole Lilloise. Le développement de l'application front est déjà effectué ce qui implique que les points d'entrer et les objets retournés sont existants.
 
+# API
+
+- https://opendata.lillemetropole.fr/explore/dataset/monuments-historiques-armentieres/api/
+- https://opendata.lillemetropole.fr/explore/dataset/monuments-historiques-lille/api/
+- https://opendata.lillemetropole.fr/explore/dataset/liste-monuments-historiques-de-roubaix/api/
+
+
 ## Users Story
 - L’utilisateur doit pouvoir récupérer la liste de tous les monuments. 
 - L’utilisateur doit pouvoir effectuer des filtres sur la liste des monuments.
@@ -43,7 +50,7 @@ Récupère la liste des monuments, possibilité d’appliui
 | date |	Number |	Date de construction|
 | ville |	String |	Ville du monument|
 
-
+    
 ## POST best_monument/
 
 
