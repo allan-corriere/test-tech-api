@@ -86,3 +86,4 @@ Récupère la liste des monuments, possibilité d’appliquer un filtre sur diff
 - Probablement créer un module `monument` et un module `type` afin de séparer les usages, mais cela n'aurait pas collé aux specs
 - Je ne savais pas vraiment quoi faire avec le `POST /best_monument`. Idem avec le paramètre de filtre `radius` pour la route `GET /monuments`
 - La fonction de filtre peut être améliorée (notamment au niveau des parse) (les filtres auraient été plus simples avec des requêtes SQLite)
+- J'ai vu (bien trop tard) qu'on pouvait ajouter des clauses `where` au moment de fetch les API de la MEL, cela aurait été beaucoup plus simple pour les filtres...
