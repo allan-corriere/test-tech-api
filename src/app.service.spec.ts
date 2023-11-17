@@ -78,4 +78,44 @@ describe('AppService', () => {
       );
     });
   });
+
+  describe('filterMonuments', () => {
+    it('should return filtered response with 1 filter', () => {
+      const monumentsPayload = [
+        new Monument('AA', 50.1, 3.2, 'House', 1984, 'Roubaix'),
+        new Monument('AB', 50.2, 3.3, 'House', 1985, 'Lille'),
+        new Monument('AC', 50.3, 3.4, 'Apartment', 1986, 'Roubaix'),
+        new Monument('AD', 50.4, 3.5, 'Square', 1987, 'Armentières'),
+      ];
+
+      const filtersPayload = { lat: '50.1' };
+
+      const monumentsExpected = [
+        new Monument('AA', 50.1, 3.2, 'House', 1984, 'Roubaix'),
+      ];
+
+      expect(
+        appService.filterMonuments(monumentsPayload, filtersPayload),
+      ).toStrictEqual(monumentsExpected);
+    });
+
+    it('should return filtered response with 2 filters', () => {
+      const monumentsPayload = [
+        new Monument('AA', 50.1, 3.2, 'House', 1984, 'Roubaix'),
+        new Monument('AB', 50.2, 3.3, 'House', 1985, 'Lille'),
+        new Monument('AC', 50.3, 3.4, 'Apartment', 1986, 'Roubaix'),
+        new Monument('AD', 50.4, 3.5, 'Square', 1987, 'Armentières'),
+      ];
+
+      const filtersPayload = { ville: 'Roubaix', type: 'House' };
+
+      const monumentsExpected = [
+        new Monument('AA', 50.1, 3.2, 'House', 1984, 'Roubaix'),
+      ];
+
+      expect(
+        appService.filterMonuments(monumentsPayload, filtersPayload),
+      ).toStrictEqual(monumentsExpected);
+    });
+  });
 });
